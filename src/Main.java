@@ -1,15 +1,11 @@
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.util.InputMismatchException;
-import java.util.Scanner;
 
 import javax.swing.*;
-import java.lang.Character;
 
 
 public class Main extends JFrame implements ActionListener, KeyListener {
@@ -21,12 +17,12 @@ public class Main extends JFrame implements ActionListener, KeyListener {
 	LEVELPICK
 	};
 	static STATE state = STATE.MENU;
-	static player player1 = new player();
-	static enemy enemy1 = new enemy();
-	static gameDetails game1 = new gameDetails();
+	static Player player1 = new Player();
+	static Enemy enemy1 = new Enemy();
+	static GameDetails game1 = new GameDetails();
 	static LevelSelect level1 = new LevelSelect();
 	
-	static paintPanel panel= new paintPanel(1000,1000);
+	static PaintPanel panel= new PaintPanel(1000,1000);
 	static JPanel btnpanel = new JPanel();
 	static JPanel levelpanel = new JPanel();
 	static int levelVar;

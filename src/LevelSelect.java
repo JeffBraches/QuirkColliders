@@ -1,7 +1,7 @@
 
 public class LevelSelect {
-	player player1 = new player();
-	enemy enemy1 = new enemy();
+	Player player1 = new Player();
+	Enemy enemy1 = new Enemy();
 	public LevelSelect(){
 		player1.setX(0);
 		player1.setY(0);
